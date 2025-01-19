@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Hours Calculator</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/themes/light.css" id="theme-style">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">Planetary Hours</div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+            <button id="settings-btn" aria-label="Settings">⚙️</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="calculator-section">
+            <form id="time-form">
+                <div class="time-inputs">
+                    <div class="input-group">
+                        <label for="sunrise">Sunrise</label>
+                        <input type="time" id="sunrise" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="sunset">Sunset</label>
+                        <input type="time" id="sunset" required>
+                    </div>
+                </div>
+                <button type="submit" class="calculate-btn">Calculate Hours</button>
+            </form>
+        </div>
+
+        <div id="results" class="results-section"></div>
+        
+        <div class="visualization-section">
+            <div id="timeline"></div>
+            <div id="chart"></div>
+        </div>
+    </main>
+
+    <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>
