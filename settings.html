@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Planetary Hours</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/components/settings.css">
+</head>
+<body>
+    <main class="settings-container">
+        <h1>Settings</h1>
+        
+        <section class="settings-group">
+            <h2>Display Preferences</h2>
+            <div class="setting-item">
+                <label for="theme-select">Theme</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="auto">System Default</option>
+                </select>
+            </div>
+            
+            <div class="setting-item">
+                <label for="time-format">Time Format</label>
+                <select id="time-format">
+                    <option value="24">24-hour</option>
+                    <option value="12">12-hour</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="settings-group">
+            <h2>Notifications</h2>
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="enable-notifications">
+                    Enable Hour Change Notifications
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label for="notification-advance">Notification Advance Time</label>
+                <select id="notification-advance">
+                    <option value="5">5 minutes</option>
+                    <option value="10">10 minutes</option>
+                    <option value="15">15 minutes</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="../src/js/settings.js"></script>
+</body>
+</html>
