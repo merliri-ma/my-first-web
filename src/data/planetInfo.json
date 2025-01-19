@@ -1,0 +1,24 @@
+{
+    "planets": {
+        "Sun": {
+            "symbol": "☉",
+            "day": "Sunday",
+            "element": "Fire",
+            "qualities": ["Vitality", "Authority", "Success"],
+            "colors": ["Gold", "Orange", "Yellow"],
+            "metals": ["Gold"],
+            "stones": ["Diamond", "Ruby", "Topaz"],
+            "influence": "Leadership, vitality, and personal power"
+        },
+        "Moon": {
+            "symbol": "☽",
+            "day": "Monday",
+            "element": "Water",
+            "qualities": ["Intuition", "Emotion", "Nurturing"],
+            "colors": ["Silver", "White", "Pearl"],
+            "metals": ["Silver"],
+            "stones": ["Pearl", "Moonstone", "Opal"],
+            "influence": "Emotions, intuition, and domestic matters"
+        }
+    }
+}
