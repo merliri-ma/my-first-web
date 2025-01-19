@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #6ea8ff;
+    --secondary-color: #ffb649;
+    --text-color: #e1e1e1;
+    --background-color: #1a1a1a;
+    --card-background: #2d2d2d;
+    --border-color: #404040;
+}
+
+.hour-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.planet-symbol {
+    color: var(--secondary-color);
+}
