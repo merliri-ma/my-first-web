@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Hours Calculator</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/components/charts.css">
+    <link rel="stylesheet" href="../src/css/components/buttons.css">
+</head>
+<body>
+    <nav-component></nav-component>
+
+    <main class="container">
+        <h1>Planetary Hours Calculator</h1>
+
+        <section class="calculator-section">
+            <time-selector></time-selector>
+
+            <div class="results-container">
+                <div class="chart-container">
+                    <h2>Current Planetary Hour</h2>
+                    <planetary-chart></planetary-chart>
+                </div>
+
+                <div class="timeline-container">
+                    <h2>Daily Timeline</h2>
+                    <planetary-timeline></planetary-timeline>
+                </div>
+
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>Sunrise</h3>
+                        <p id="sunrise-time"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Sunset</h3>
+                        <p id="sunset-time"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Current Planet</h3>
+                        <p id="current-planet"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary btn-icon" id="shareBtn">
+                    <img src="../assets/icons/ui/share.svg" alt="Share">
+                    Share
+                </button>
+                <button class="btn btn-secondary btn-icon" id="downloadBtn">
+                    <img src="../assets/icons/ui/download.svg" alt="Download">
+                    Download
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/js/calculations/planetaryHours.js"></script>
+    <script type="module" src="../src/js/calculations/sunCalculations.js"></script>
+    <script type="module" src="../components/TimeSelector.js"></script>
+    <script type="module" src="../components/Navigation.js"></script>
+</body>
+</html>
