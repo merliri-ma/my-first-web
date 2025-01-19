@@ -1,0 +1,82 @@
+{
+    "regions": {
+        "America": {
+            "New_York": {
+                "offset": -5,
+                "dst": true,
+                "display": "New York (EST)",
+                "coordinates": {
+                    "lat": 40.7128,
+                    "lng": -74.0060
+                }
+            },
+            "Los_Angeles": {
+                "offset": -8,
+                "dst": true,
+                "display": "Los Angeles (PST)",
+                "coordinates": {
+                    "lat": 34.0522,
+                    "lng": -118.2437
+                }
+            },
+            "Chicago": {
+                "offset": -6,
+                "dst": true,
+                "display": "Chicago (CST)",
+                "coordinates": {
+                    "lat": 41.8781,
+                    "lng": -87.6298
+                }
+            }
+        },
+        "Europe": {
+            "London": {
+                "offset": 0,
+                "dst": true,
+                "display": "London (GMT)",
+                "coordinates": {
+                    "lat": 51.5074,
+                    "lng": -0.1278
+                }
+            },
+            "Paris": {
+                "offset": 1,
+                "dst": true,
+                "display": "Paris (CET)",
+                "coordinates": {
+                    "lat": 48.8566,
+                    "lng": 2.3522
+                }
+            },
+            "Berlin": {
+                "offset": 1,
+                "dst": true,
+                "display": "Berlin (CET)",
+                "coordinates": {
+                    "lat": 52.5200,
+                    "lng": 13.4050
+                }
+            }
+        },
+        "Asia": {
+            "Tokyo": {
+                "offset": 9,
+                "dst": false,
+                "display": "Tokyo (JST)",
+                "coordinates": {
+                    "lat": 35.6762,
+                    "lng": 139.6503
+                }
+            },
+            "Singapore": {
+                "offset": 8,
+                "dst": false,
+                "display": "Singapore (SGT)",
+                "coordinates": {
+                    "lat": 1.3521,
+                    "lng": 103.8198
+                }
+            }
+        }
+    }
+}
