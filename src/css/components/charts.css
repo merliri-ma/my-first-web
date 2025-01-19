@@ -1,0 +1,83 @@
+.chart-container {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.planetary-wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.wheel-segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 33%);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.chart-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.chart-tooltip {
+    position: absolute;
+    background: var(--tooltip-background);
+    color: var(--tooltip-text);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.chart-grid {
+    stroke: var(--grid-color);
+    stroke-width: 1;
+    opacity: 0.1;
+}
+
+.chart-axis {
+    font-size: 0.75rem;
+    color: var(--text-color-secondary);
+}
+
+.chart-line {
+    fill: none;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.chart-line:hover {
+    stroke-width: 3;
+}
